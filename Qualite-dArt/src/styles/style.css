@@ -1,6 +1,17 @@
+[data-bs-theme=dark]{
+    --body-bgMain: #fff;
+    --body-bg-DarkMain: #3D3D3D;
+}
+.bg-DarkMain{
+	background-color: #3D3D3D;
+    /*$white: var(--body-bg);*/
+}
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+
 
 body {
     padding-top: 3rem;
@@ -8,7 +19,7 @@ body {
     color: rgb(var(--bs-tertiary-color-rgb));
   }
   
-  
+
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
@@ -81,28 +92,23 @@ body {
     }
   }
 
-  /**Footer**/
+  
 
-.footer {
-    background-color: black;
+  #color{
+    background-color: rgb(0, 0, 0);  
 }
 
-.img-r {
-    width: 70px !important;
+#item {
+    color: aliceblue;
+  }
+
+/* Estilo personalizado para el fondo de los rellenables del formulario con el color #f9f8f2 */
+.custom-bg {
+    background-color: #f9f8f2;
 }
 
-@media (min-width: 576px) {
-    .img-r {
-        width: 120px !important;
-    }
+/* Estilo personalizado para el sombreado */
+.custom-shadow {
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
 }
 
-.icos {
-    width: 20px !important;
-}
-
-@media (min-width: 576px) {
-    .icos {
-        width: 32px !important;
-    }
-}
