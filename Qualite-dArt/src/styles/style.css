@@ -80,3 +80,29 @@ body {
       margin-top: 7rem;
     }
   }
+
+  /**Footer**/
+
+.footer {
+    background-color: black;
+}
+
+.img-r {
+    width: 70px !important;
+}
+
+@media (min-width: 576px) {
+    .img-r {
+        width: 120px !important;
+    }
+}
+
+.icos {
+    width: 20px !important;
+}
+
+@media (min-width: 576px) {
+    .icos {
+        width: 32px !important;
+    }
+}
