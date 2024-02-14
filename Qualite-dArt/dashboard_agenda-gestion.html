@@ -234,7 +234,7 @@
                     <br><br>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                        <a class="nav-link d-flex align-items-center gap-2" aria-current="page" href="#">
                             <svg class="bi"><use xlink:href="#house-fill"/></svg>
                             Dashboard
                         </a>
@@ -283,7 +283,7 @@
                         </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center gap-2" href="dashboard_agenda-gestion.html">
+                        <a class="nav-link d-flex align-items-center gap-2 active" href="dashboard_agenda-gestion.html">
                             <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
                             Gestionar Agendas
                         </a>
@@ -355,15 +355,16 @@
               </div>
           
               <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <div class="p-2  mt-5">
+
+                <div class="p-2 mt-5 ">
                     <h1>Agenda</h1>
                     <p class="lead">Gestionar Agenda</p>
-                    <a class="btn btn-primary" href="dashboard-registro.html" role="button">Añadir Recursos</a>
+                    <button type="button" class="btn btn-secondary btn-xl"  href="dashboard_agenda-registro.html">AÑADIR EVENTO</button>
                 </div>
 
 
                 <div class="table-responsive small p-2">
-                    <table class="table table-striped table-sm">
+                    <table class="table  table-dark table-striped ">
                     <thead>
                         <tr>
                         <th scope="col">NOMBRE</th>
@@ -380,77 +381,220 @@
                     </thead>
                     <tbody>
                         <tr>
-                        <td>Juan</td>
-                        <td>564 123 7894</td>
-                        <td>ejemplo@ejemplo.com</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>CRUD</td>
+                            <td>Maria</td>
+                            <td>789 456 1234</td>
+                            <td>maria@example.com</td>
+                            <td>123 Street Name</td>
+                            <td>Fotografia</td>
+                            <td>14-11-2023</td>
+                            <td>12:59</td>
+                            <td>Trabajo de fotografia</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-success-emphasis bg-success-subtle border border-success-subtle rounded-2">ACTIVO</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
-                        <td>Juan</td>
-                        <td>564 123 7894</td>
-                        <td>ejemplo@ejemplo.com</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>CRUD</td>
+                            <td>John</td>
+                            <td>123 456 7890</td>
+                            <td>john@example.com</td>
+                            <td>456 Avenue Road</td>
+                            <td>Design</td>
+                            <td>2024-02-13</td>
+                            <td>10:30</td>
+                            <td>Graphic Designer</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-2">PENDING</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
-                        <td>Juan</td>
-                        <td>564 123 7894</td>
-                        <td>ejemplo@ejemplo.com</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>CRUD</td>
+                            <td>Lisa</td>
+                            <td>987 654 3210</td>
+                            <td>lisa@example.com</td>
+                            <td>789 Elm Street</td>
+                            <td>Writing</td>
+                            <td>2024-02-14</td>
+                            <td>15:00</td>
+                            <td>Content Writer</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-success-emphasis bg-success-subtle border border-success-subtle rounded-2">COMPLETED</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Carlos</td>
+                            <td>567 890 1234</td>
+                            <td>carlos@example.com</td>
+                            <td>321 Oak Street</td>
+                            <td>Programming</td>
+                            <td>2024-02-15</td>
+                            <td>14:45</td>
+                            <td>Software Developer</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-2">CANCELLED</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
-                        <td>Juan</td>
-                        <td>564 123 7894</td>
-                        <td>ejemplo@ejemplo.com</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>CRUD</td>
+                            <td>Sophia</td>
+                            <td>234 567 8901</td>
+                            <td>sophia@example.com</td>
+                            <td>901 Pine Avenue</td>
+                            <td>Marketing</td>
+                            <td>2024-02-16</td>
+                            <td>09:30</td>
+                            <td>Marketing Specialist</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-info-emphasis bg-info-subtle border border-info-subtle rounded-2">IN PROGRESS</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>David</td>
+                            <td>345 678 9012</td>
+                            <td>david@example.com</td>
+                            <td>567 Maple Lane</td>
+                            <td>Education</td>
+                            <td>2024-02-17</td>
+                            <td>11:15</td>
+                            <td>Teacher</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-2">PENDING</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
-                        <td>Juan</td>
-                        <td>564 123 7894</td>
-                        <td>ejemplo@ejemplo.com</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>CRUD</td>
+                            <td>Emily</td>
+                            <td>456 789 0123</td>
+                            <td>emily@example.com</td>
+                            <td>789 Cedar Street</td>
+                            <td>Healthcare</td>
+                            <td>2024-02-18</td>
+                            <td>13:30</td>
+                            <td>Nurse</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-success-emphasis bg-success-subtle border border-success-subtle rounded-2">COMPLETED</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Anna</td>
+                            <td>567 890 1234</td>
+                            <td>anna@example.com</td>
+                            <td>123 Pine Street</td>
+                            <td>Art</td>
+                            <td>2024-02-19</td>
+                            <td>10:00</td>
+                            <td>Artist</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-info-emphasis bg-info-subtle border border-info-subtle rounded-2">IN PROGRESS</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
-                        <td>Juan</td>
-                        <td>564 123 7894</td>
-                        <td>ejemplo@ejemplo.com</td>
-                        <td>placeholder</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>text</td>
-                        <td>CRUD</td>
+                            <td>Michael</td>
+                            <td>678 901 2345</td>
+                            <td>michael@example.com</td>
+                            <td>456 Oak Avenue</td>
+                            <td>Finance</td>
+                            <td>2024-02-20</td>
+                            <td>14:30</td>
+                            <td>Financial Analyst</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-success-emphasis bg-success-subtle border border-success-subtle rounded-2">COMPLETED</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
                         </tr>
+                        <tr>
+                            <td>Sophie</td>
+                            <td>789 012 3456</td>
+                            <td>sophie@example.com</td>
+                            <td>789 Maple Street</td>
+                            <td>Engineering</td>
+                            <td>2024-02-21</td>
+                            <td>12:00</td>
+                            <td>Engineer</td>
+                            <td>
+                                <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-2">CANCELLED</small>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success btn-sm" href="#">
+                                    <i class="bi bi-pencil"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" href="#">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        
                         
                     </tbody>
                     </table>
